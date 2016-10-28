@@ -17,6 +17,7 @@ class ComposerStaticInita1f5a2e6db759ff71983006a9dd31f2f
         '65fec9ebcfbb3cbb4fd0d519687aea01' => __DIR__ . '/..' . '/danielstjules/stringy/src/Create.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'b4e3f29b106af37a2bb239f73cdf68c7' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -271,6 +272,10 @@ class ComposerStaticInita1f5a2e6db759ff71983006a9dd31f2f
             array (
                 0 => __DIR__ . '/..' . '/phpspec/php-diff/lib',
             ),
+            'Dflydev\\ApacheMimeTypes' => 
+            array (
+                0 => __DIR__ . '/..' . '/dflydev/apache-mime-types/src',
+            ),
         ),
         'C' => 
         array (
@@ -286,8 +291,12 @@ class ComposerStaticInita1f5a2e6db759ff71983006a9dd31f2f
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Events\\Event' => __DIR__ . '/../..' . '/app/Events/Event.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Admin\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PostController.php',
+        'App\\Http\\Controllers\\Admin\\TagController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TagController.php',
+        'App\\Http\\Controllers\\Admin\\UploadController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/UploadController.php',
         'App\\Http\\Controllers\\Auth\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthController.php',
         'App\\Http\\Controllers\\Auth\\PasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordController.php',
+        'App\\Http\\Controllers\\BlogController' => __DIR__ . '/../..' . '/app/Http/Controllers/BlogController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -295,11 +304,16 @@ class ComposerStaticInita1f5a2e6db759ff71983006a9dd31f2f
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\Request' => __DIR__ . '/../..' . '/app/Http/Requests/Request.php',
+        'App\\Http\\Requests\\TagCreateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/TagCreateRequest.php',
+        'App\\Http\\Requests\\TagUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/TagUpdateRequest.php',
         'App\\Jobs\\Job' => __DIR__ . '/../..' . '/app/Jobs/Job.php',
+        'App\\Post' => __DIR__ . '/../..' . '/app/Post.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Services\\Markdowner' => __DIR__ . '/../..' . '/app/Services/Markdowner.php',
+        'App\\Tag' => __DIR__ . '/../..' . '/app/Tag.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
@@ -319,6 +333,8 @@ class ComposerStaticInita1f5a2e6db759ff71983006a9dd31f2f
         'ClassPreloader\\Parser\\NodeTraverser' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/Parser/NodeTraverser.php',
         'ClassPreloader\\Parser\\StrictTypesVisitor' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/Parser/StrictTypesVisitor.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreatePostTagPivot' => __DIR__ . '/../..' . '/database/migrations/2016_10_28_154453_create_post_tag_pivot.php',
+        'CreateTagsTable' => __DIR__ . '/../..' . '/database/migrations/2016_10_28_154203_create_tags_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
@@ -331,6 +347,14 @@ class ComposerStaticInita1f5a2e6db759ff71983006a9dd31f2f
         'Cron\\MonthField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/MonthField.php',
         'Cron\\YearField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/YearField.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
+        'Dflydev\\ApacheMimeTypes\\AbstractRepository' => __DIR__ . '/..' . '/dflydev/apache-mime-types/src/Dflydev/ApacheMimeTypes/AbstractRepository.php',
+        'Dflydev\\ApacheMimeTypes\\ArrayRepository' => __DIR__ . '/..' . '/dflydev/apache-mime-types/src/Dflydev/ApacheMimeTypes/ArrayRepository.php',
+        'Dflydev\\ApacheMimeTypes\\CompositeRepository' => __DIR__ . '/..' . '/dflydev/apache-mime-types/src/Dflydev/ApacheMimeTypes/CompositeRepository.php',
+        'Dflydev\\ApacheMimeTypes\\FlatRepository' => __DIR__ . '/..' . '/dflydev/apache-mime-types/src/Dflydev/ApacheMimeTypes/FlatRepository.php',
+        'Dflydev\\ApacheMimeTypes\\JsonRepository' => __DIR__ . '/..' . '/dflydev/apache-mime-types/src/Dflydev/ApacheMimeTypes/JsonRepository.php',
+        'Dflydev\\ApacheMimeTypes\\Parser' => __DIR__ . '/..' . '/dflydev/apache-mime-types/src/Dflydev/ApacheMimeTypes/Parser.php',
+        'Dflydev\\ApacheMimeTypes\\PhpRepository' => __DIR__ . '/..' . '/dflydev/apache-mime-types/src/Dflydev/ApacheMimeTypes/PhpRepository.php',
+        'Dflydev\\ApacheMimeTypes\\RepositoryInterface' => __DIR__ . '/..' . '/dflydev/apache-mime-types/src/Dflydev/ApacheMimeTypes/RepositoryInterface.php',
         'Diff' => __DIR__ . '/..' . '/phpspec/php-diff/lib/Diff.php',
         'Diff_Renderer_Abstract' => __DIR__ . '/..' . '/phpspec/php-diff/lib/Diff/Renderer/Abstract.php',
         'Diff_Renderer_Html_Array' => __DIR__ . '/..' . '/phpspec/php-diff/lib/Diff/Renderer/Html/Array.php',
